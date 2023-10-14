@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100lvh;
+  width: 100lvw;
+  justify-content: center;
+  overflow: hidden;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-around;
+  max-width: 650px;
+  width: 80vw;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.date-container,.time-container {
+  align-items: center;
+  border: solid 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3vw;
+  width: 80%;
+}
+
+.date-time-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100px;
+  padding: 10px 20px;
+}
+
+.text {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 48px;
+}
+
+.value {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 48px;
+}
+
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+    width: auto;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .text,.value {
+    font-size: 24px;
+  }
+  .date-time-container {
+    min-width: 0px;
+  }
+  .js-hours {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+}
